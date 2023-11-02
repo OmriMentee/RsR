@@ -136,10 +136,14 @@ def update_robo_state(self):
     #it not a class function. its a function that automates class functions. 
     pass
 
-# Create an instance of the MyTool class
-single_motor = MyTool(400,"ARM")
 
-# Use the class's method
-print(f"this is actuator's {single_motor.motor_id} name: {single_motor.get_actuator_name()}!")
+def main():
+    # Create an instance of the MyTool class
+    single_motor = MyTool(400,"ARM")
 
+    # Use the class's method
+    print(f"this is actuator's {single_motor.motor_id} name: {single_motor.get_actuator_name()}!")
+
+if __name__ == "__main__":
+    main()
 
